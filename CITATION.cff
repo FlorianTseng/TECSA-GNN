@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: TECSA-GNN
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Yuxuan
+    family-names: Zeng
+    email: florian@whu.edu.cn
+    name-particle: Yuxuan
+    orcid: 'https://orcid.org/0009-0004-8954-4377'
+    affiliation: Wuhan University
+identifiers:
+  - type: url
+    value: 'https://github.com/FlorianTseng/TECSA-GNN'
+repository-code: 'https://github.com/FlorianTseng/TECSA-GNN'
+license: MIT
