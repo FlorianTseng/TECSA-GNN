@@ -11,10 +11,7 @@ authors:
   - given-names: Yuxuan
     family-names: Zeng
     email: florian@whu.edu.cn
-    orcid: 'https://orcid.org/0009-0004-8954-4377'
     affiliation: Wuhan University
-identifiers:
-  - type: url
-    value: 'https://github.com/FlorianTseng/TECSA-GNN'
+    orcid: 'https://orcid.org/0009-0004-8954-4377'
 repository-code: 'https://github.com/FlorianTseng/TECSA-GNN'
 license: MIT
