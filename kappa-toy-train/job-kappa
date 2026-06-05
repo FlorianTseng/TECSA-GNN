@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --output=kappa-out-%j.txt
+#SBATCH --error=kappa-err-%j.txt
+#SBATCH --partition=gpu
+#SBATCH --account=zywang
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gres=gpu:1
+
+source ~/.bashrc
+
+conda activate /scratch/zengyuxuan/conda-envs/tecsagnn
+
+cd /project2/zengyuxuan/4thpaper/model/kappa
+
+python train-kappa.py
