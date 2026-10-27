@@ -59,10 +59,6 @@ python -m tecsa_gnn.predict --properties properties.csv --cifs path/to/cifs \
 
 The feature generator uses Magpie, stoichiometry, valence-orbital, ion, band-center and elemental-fraction descriptors, orders columns using `data/global-feat.csv.gz`, and applies its min–max statistics. New values can fall outside [0, 1]. It requires compatible matminer descriptor names and a known, physically meaningful gap. The original element feature table is included. For training, the `300` column must contain the S target in µV/K or log₁₀(σ/τ), log₁₀(κₑ/τ), as appropriate. To derive new property tables from the raw database, extract the diagonal tensor values as described by CraTENet, take their mean, associate each selected structure with its band gap and carrier conditions, apply log₁₀ to positive conductivity targets, and write this CSV layout. The supplied tables preserve the original filtering and are the reference for reproduction; the full original filtering and κₑ extraction pipeline are not included.
 
-## ⚠️ Reproducibility notes
-
-The graph construction and line-graph batching follow the shared historical implementation for compatibility with the weights. Line-graph indices are constructed before bond deduplication and PyG's default batching offsets them as atom indices; consequently predictions can depend on batch size and neighboring samples. Use a fixed input order and batch size when comparing results. Changing the graph representation requires retraining and validation. The three weights are taken from the original public prediction folder; the κₑ weight is identical to the checkpoint in its `kappa-toy-train` folder. Their exact training splits and correspondence to every paper result have not been independently established. Feature generation for new materials and complete paper metrics should be independently validated before scientific use.
-
 ## 📖 Citation
 
 ```bibtex
