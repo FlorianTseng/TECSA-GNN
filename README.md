@@ -1,4 +1,4 @@
-# TECSA-GNN 🔬
+# ThermoElectric Crystal Structure Aware Graph Neural Network (TECSA-GNN)
 
 TECSA-GNN predicts electronic thermoelectric transport from crystal structures, composition descriptors, band gap, carrier type and concentration. This repository contains the shared 300 K models, prepared data and scripts accompanying [our paper](https://doi.org/10.1103/m8nb-bbp8) ([arXiv](https://arxiv.org/abs/2512.06697)).
 
