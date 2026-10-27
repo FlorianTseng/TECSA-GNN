@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+pymatgen
+matminer
+torch>=2.6
+torch-geometric
